@@ -1,0 +1,6 @@
+name: 'Hello World Project'
+description: 'A container based python Hello world App'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  
