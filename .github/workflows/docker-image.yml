@@ -21,6 +21,6 @@ jobs:
     - name: Checking the default environment variable
       run: echo "Testing the default environment variable $GITHUB_REF"
     - name: Checking the custom environment variable
-      run: echo "Testing the custom environment variable $first_name
+      run: echo "Testing the custom environment variable $first_name"
       env:
         first_name: Shashi
