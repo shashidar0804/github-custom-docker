@@ -18,6 +18,9 @@ jobs:
       run: docker build . --file actions/python-hello-world/Dockerfile --tag python-hello-world
     - name: Run the docker image
       run: docker run --rm python-hello-world
+    - name: Run build scripts
+      run: ./.github/scripts/build.sh
+      shell: bash
     - name: Checking the default environment variable
       run: echo "Testing the default environment variable $GITHUB_REF"
     - name: Checking the custom environment variable
